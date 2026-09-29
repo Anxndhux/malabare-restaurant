@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserve a Table | MALABARÉ Fine Dining Kowdiar</title>
+  
+  <meta name="description" content="Reserve your table at MALABARÉ in Kowdiar, Thiruvananthapuram. Experience luxury Kerala & Malabar fine dining, private dining vaults, and courtyard seating.">
+  <meta name="keywords" content="Malabare reservation, table booking Trivandrum, fine dining reservation Kowdiar, luxury restaurant booking Kerala">
+  <meta property="og:title" content="Reserve a Table | MALABARÉ Kowdiar">
+  <meta property="og:description" content="Reserve your dining experience at MALABARÉ. Courtyard, Royal Teak Hall, and The Spice Vault.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta name="theme-color" content="#0a0b0d">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚜️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Site Header
+       ========================================================================= -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="MALABARÉ Home">
+        <span class="brand-name">MALABAR<span>É</span></span>
+        <span class="brand-location">Kowdiar · Kerala</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html#story" class="nav-link">Our Story</a>
+        <a href="index.html#signatures" class="nav-link">Signatures</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="index.html#experience" class="nav-link">Experience</a>
+        <a href="index.html#chef" class="nav-link">The Chef</a>
+        <a href="index.html#gallery" class="nav-link">Gallery</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+914712728899" class="nav-phone" aria-label="Call concierge">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>+91 471 272 8899</span>
+        </a>
+        <a href="reservation.html" class="btn btn-primary btn-sm active">Reserve a Table</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="index.html#story" class="mobile-nav-link">Our Story</a>
+      <a href="index.html#signatures" class="mobile-nav-link">Signatures</a>
+      <a href="menu.html" class="mobile-nav-link">Full Menu</a>
+      <a href="index.html#experience" class="mobile-nav-link">Experience</a>
+      <a href="reservation.html" class="mobile-nav-link active">Reservations</a>
+      <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="tel:+914712728899" class="btn btn-secondary" style="width:100%;">Call Concierge</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="section-eyebrow">Table Concierge</div>
+        <h1 class="section-title">Reserve Your <span class="gold">Table</span></h1>
+        <p class="section-subtitle">
+          Join us for an unhurried culinary journey through the royal kitchens and spice corridors of Malabar.
+        </p>
+        <div class="gold-divider"><span class="diamond"></span></div>
+      </div>
+    </section>
+
+    <!-- Reservation Content Grid -->
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+      <div class="container">
+        <div class="reservation-layout-grid">
+          
+          <!-- Left: The Reservation Form -->
+          <div class="reservation-wrapper" style="padding: 3.5rem;">
+            <div style="margin-bottom: 2.5rem;">
+              <h3 style="font-family: var(--font-serif-display); font-size: 1.75rem; color: var(--cream-pure); margin-bottom: 0.5rem;">
+                Table Details
+              </h3>
+              <p style="color: var(--cream-muted); font-size: 0.875rem;">
+                Select your preferred seating atmosphere and arrival window.
+              </p>
+            </div>
+
+            <!-- Form -->
+            <form class="reservation-form" id="detailedReservationForm" novalidate>
+              
+              <!-- Seating Area Selector -->
+              <div style="margin-bottom: 1.75rem;">
+                <label class="form-label" style="display:block; margin-bottom: 0.75rem;">Choose Seating Atmosphere *</label>
+                <input type="hidden" name="seating" id="seatingAreaInput" value="The Royal Teak Hall">
+                <div class="seating-areas-grid">
+                  <div class="seating-choice-btn active" data-area="The Royal Teak Hall">
+                    <div class="seating-choice-title">Royal Teak Hall</div>
+                    <div class="seating-choice-sub">Intimate Banquettes</div>
+                  </div>
+                  <div class="seating-choice-btn" data-area="The Travancore Courtyard">
+                    <div class="seating-choice-title">Courtyard Veranda</div>
+                    <div class="seating-choice-sub">Alfresco Palm Garden</div>
+                  </div>
+                  <div class="seating-choice-btn" data-area="The Spice Vault">
+                    <div class="seating-choice-title">The Spice Vault</div>
+                    <div class="seating-choice-sub">Private Cellar</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reservation-form-grid">
+                
+                <!-- Guest Name -->
+                <div class="form-group">
+                  <label class="form-label" for="detailName">Full Name *</label>
+                  <input type="text" id="detailName" name="name" class="form-control" placeholder="e.g. Dr. Radhika Nair" required>
+                  <span class="form-error">Please enter your full name</span>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                  <label class="form-label" for="detailPhone">Phone Number *</label>
+                  <input type="tel" id="detailPhone" name="phone" class="form-control" placeholder="+91 98470 12345" required>
+                  <span class="form-error">Please enter a valid telephone number</span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group full-width">
+                  <label class="form-label" for="detailEmail">Email Address *</label>
+                  <input type="email" id="detailEmail" name="email" class="form-control" placeholder="radhika@example.com" required>
+                  <span class="form-error">Please enter a valid email address</span>
+                </div>
+
+                <!-- Date -->
+                <div class="form-group">
+                  <label class="form-label" for="detailDate">Date of Visit *</label>
+                  <input type="date" id="detailDate" name="date" class="form-control" required>
+                  <span class="form-error">Please choose a date</span>
+                </div>
+
+                <!-- Time Slot -->
+                <div class="form-group">
+                  <label class="form-label" for="detailTime">Dining Time *</label>
+                  <select id="detailTime" name="time" class="form-control" required>
+                    <option value="" disabled selected>Select seating time</option>
+                    <optgroup label="Lunch Service">
+                      <option value="12:30 PM">12:30 PM (Lunch)</option>
+                      <option value="01:15 PM">01:15 PM (Lunch)</option>
+                      <option value="02:00 PM">02:00 PM (Lunch)</option>
+                      <option value="02:45 PM">02:45 PM (Lunch)</option>
+                    </optgroup>
+                    <optgroup label="Dinner Service">
+                      <option value="07:00 PM">07:00 PM (Twilight)</option>
+                      <option value="07:45 PM">07:45 PM (Dinner)</option>
+                      <option value="08:30 PM">08:30 PM (Prime Dinner)</option>
+                      <option value="09:15 PM">09:15 PM (Late Dinner)</option>
+                      <option value="10:00 PM">10:00 PM (Supper)</option>
+                    </optgroup>
+                  </select>
+                  <span class="form-error">Please choose a time</span>
+                </div>
+
+                <!-- Guests -->
+                <div class="form-group full-width">
+                  <label class="form-label" for="detailGuests">Number of Guests *</label>
+                  <select id="detailGuests" name="guests" class="form-control" required>
+                    <option value="" disabled selected>Select number of guests</option>
+                    <option value="1">1 Guest (Solo Culinary Experience)</option>
+                    <option value="2">2 Guests (Couple / Date Night)</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests (Family Dining)</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="7">7 Guests</option>
+                    <option value="8">8 Guests</option>
+                    <option value="10+">10+ Guests (Private Vault Table)</option>
+                  </select>
+                  <span class="form-error">Please indicate party size</span>
+                </div>
+
+                <!-- Occasion -->
+                <div class="form-group full-width">
+                  <label class="form-label" for="detailOccasion">Dining Occasion</label>
+                  <select id="detailOccasion" name="occasion" class="form-control">
+                    <option value="Casual Fine Dining">Casual Fine Dining</option>
+                    <option value="Wedding Anniversary">Wedding Anniversary</option>
+                    <option value="Birthday Celebration">Birthday Celebration</option>
+                    <option value="Business Entertaining">Business Entertaining</option>
+                    <option value="Private Tasting">Private Tasting Menu</option>
+                  </select>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="form-group full-width">
+                  <label class="form-label" for="detailNotes">Special Dietary Notes / Preferences</label>
+                  <textarea id="detailNotes" name="special_requests" class="form-control" placeholder="Inform our chef of shellfish or nut allergies, vegan requests, wheelchair assistance, or personalized dessert messages..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="reservation-submit-row">
+                  <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    Confirm Table Reservation
+                  </button>
+                  <p class="reservation-disclaimer">
+                    Your request will be saved with a reference number. Our team can follow up to confirm availability. Valet parking is available at the Kowdiar Palace gates.
+                  </p>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+          <!-- Right: Dining Guide & Information -->
+          <div style="display: flex; flex-direction: column; gap: 2rem;">
+            
+            <!-- Information Card -->
+            <div class="reservation-info-card">
+              <h4 style="font-family: var(--font-serif-display); font-size: 1.25rem; color: var(--cream-pure); margin-bottom: 1.25rem;">
+                Dining Guidelines
+              </h4>
+              
+              <div style="display: flex; flex-direction: column; gap: 1.25rem; font-size: 0.875rem; color: var(--cream-muted); line-height: 1.7;">
+                <div>
+                  <strong style="color: var(--gold-light); display: block; margin-bottom: 0.2rem;">Dress Code</strong>
+                  Smart Casual. Traditional Kerala attire (Kasavu mundu and silk shirts) is warmly celebrated.
+                </div>
+
+                <div>
+                  <strong style="color: var(--gold-light); display: block; margin-bottom: 0.2rem;">Grace Period</strong>
+                  We hold your reserved table for 15 minutes past your reservation time. If delayed, kindly inform our concierge.
+                </div>
+
+                <div>
+                  <strong style="color: var(--gold-light); display: block; margin-bottom: 0.2rem;">Private Events & Vault Buyouts</strong>
+                  For events exceeding 15 guests or exclusive dining room buyouts, please contact our events director directly at <a href="mailto:events@malabare.in" style="color: var(--gold-light);">events@malabare.in</a>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Concierge Direct Card -->
+            <div class="reservation-info-card" style="border-color: var(--gold-border); background: rgba(19, 23, 29, 0.9);">
+              <h4 style="font-family: var(--font-serif-display); font-size: 1.25rem; color: var(--cream-pure); margin-bottom: 0.75rem;">
+                Concierge Assistance
+              </h4>
+              <p style="font-size: 0.875rem; color: var(--cream-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+                Need help coordinating a surprise, selecting a rare vintage wine, or organizing luxury transport?
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <a href="tel:+914712728899" class="btn btn-secondary btn-sm" style="width: 100%;">
+                  Call Concierge: +91 471 272 8899
+                </a>
+                <a href="https://wa.me/919847012345?text=Hello%20MALABARÉ%2C%20I%20would%20like%20to%20inquire%20about%20a%20reservation." target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="width: 100%;">
+                  WhatsApp Direct Message
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Reservation Confirmation Modal -->
+  <div class="modal-overlay" id="reservationConfirmationModal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close modal">
+        <svg style="width:24px;height:24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-badge-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h3 class="modal-title">Reservation Request Received</h3>
+      <div class="modal-booking-ref">Reservation Reference: #MLB-2026</div>
+
+      <div class="modal-summary-box">
+        <div class="summary-row">
+          <span class="summary-label">Guest Name:</span>
+          <span class="summary-val res-name">Anand Varma</span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Date & Time:</span>
+          <span class="summary-val res-datetime">Today at 8:00 PM</span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Party Size:</span>
+          <span class="summary-val res-guests">2 Guests</span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Seating:</span>
+          <span class="summary-val res-seating">The Royal Teak Hall</span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Location:</span>
+          <span class="summary-val">Palace Avenue, Kowdiar, Trivandrum</span>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <button class="btn btn-primary btn-sm modal-close-trigger">Done</button>
+        <a href="https://wa.me/919847012345?text=Hello%20MALABARÉ%2C%20I%20have%20a%20confirmed%20reservation." target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo">MALABAR<span>É</span></a>
+          <p class="footer-tagline-text">&ldquo;The Soul of Malabar, Served Beautifully.&rdquo;</p>
+          <p class="footer-desc">
+            An ode to coastal Kerala culinary heritage, where ancient claypot alchemy and heirloom spice recipes converge with contemporary fine dining excellence.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="index.html#story" class="footer-link">Our Heritage</a></li>
+            <li><a href="index.html#signatures" class="footer-link">Signatures</a></li>
+            <li><a href="menu.html" class="footer-link">Full Menu</a></li>
+            <li><a href="reservation.html" class="footer-link">Reservations</a></li>
+            <li><a href="index.html#contact" class="footer-link">Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Service Hours</h4>
+          <div class="footer-hours-list">
+            <div class="hours-entry">
+              <span class="hours-day">Lunch (Tue – Sun)</span>
+              <span>12:00 PM – 03:30 PM</span>
+            </div>
+            <div class="hours-entry">
+              <span class="hours-day">Dinner (Tue – Sun)</span>
+              <span>07:00 PM – 11:30 PM</span>
+            </div>
+            <div class="hours-entry">
+              <span class="hours-day">Mondays</span>
+              <span>Closed for Private Events</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Inquiries</h4>
+          <p style="font-size:0.875rem; color:var(--cream-muted); line-height:1.7;">
+            Palace Avenue, Kowdiar, Thiruvananthapuram<br>
+            Phone: <a href="tel:+914712728899" style="color:var(--gold-light);">+91 471 272 8899</a><br>
+            Email: <a href="mailto:concierge@malabare.in" style="color:var(--gold-light);">concierge@malabare.in</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 MALABARÉ Fine Dining. Kowdiar, Thiruvananthapuram, Kerala.</div>
+        <div>Crafted with prestige for the <span class="agency-credit">BRUK Digital Studio Portfolio</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À La Carte Menu | MALABARÉ Fine Dining Kowdiar</title>
+  
+  <meta name="description" content="Explore the gourmet à la carte menu at MALABARÉ in Kowdiar, Thiruvananthapuram. Thalassery Biryani, Karimeen Pollichathu, Chemmeen Manga Curry, and artisanal Kerala desserts.">
+  <meta name="keywords" content="Malabare menu, Thalassery Biryani price, Karimeen Pollichathu Trivandrum, Kerala food menu, Kowdiar luxury dining menu">
+  <meta property="og:title" content="À La Carte Menu | MALABARÉ Kowdiar">
+  <meta property="og:description" content="The complete culinary collection of heirloom Malabar and coastal Kerala specialties.">
+  <meta property="og:image" content="assets/images/malabar-biryani.jpg">
+  <meta name="theme-color" content="#0a0b0d">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚜️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Site Header
+       ========================================================================= -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="MALABARÉ Home">
+        <span class="brand-name">MALABAR<span>É</span></span>
+        <span class="brand-location">Kowdiar · Kerala</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html#story" class="nav-link">Our Story</a>
+        <a href="index.html#signatures" class="nav-link">Signatures</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="index.html#experience" class="nav-link">Experience</a>
+        <a href="index.html#chef" class="nav-link">The Chef</a>
+        <a href="index.html#gallery" class="nav-link">Gallery</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+914712728899" class="nav-phone" aria-label="Call concierge">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>+91 471 272 8899</span>
+        </a>
+        <a href="reservation.html" class="btn btn-primary btn-sm">Reserve a Table</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="index.html#story" class="mobile-nav-link">Our Story</a>
+      <a href="index.html#signatures" class="mobile-nav-link">Signatures</a>
+      <a href="menu.html" class="mobile-nav-link active">Full Menu</a>
+      <a href="index.html#experience" class="mobile-nav-link">Experience</a>
+      <a href="reservation.html" class="mobile-nav-link">Reservations</a>
+      <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="reservation.html" class="btn btn-primary" style="width:100%;">Reserve a Table</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="section-eyebrow">The Culinary Repertoire</div>
+        <h1 class="section-title">The Complete <span class="gold">Menu</span></h1>
+        <p class="section-subtitle">
+          From ancient Malabar port trade spices to pristine backwater treasures, every dish is prepared to order using wood-pressed oils and slow claypot steaming.
+        </p>
+        <div class="gold-divider"><span class="diamond"></span></div>
+      </div>
+    </section>
+
+    <!-- Menu Directory Section -->
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+      <div class="container">
+        
+        <!-- Live Search Bar -->
+        <div class="menu-search-bar">
+          <svg class="menu-search-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" class="menu-search-input" placeholder="Search dishes, ingredients (e.g. Prawns, Biryani, Coconut, Duck)..." aria-label="Search dishes">
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="menu-filter-nav">
+          <button class="menu-filter-btn active" data-filter="all">All Dishes</button>
+          <button class="menu-filter-btn" data-filter="starters">Starters</button>
+          <button class="menu-filter-btn" data-filter="classics">Kerala Classics</button>
+          <button class="menu-filter-btn" data-filter="biryani">Dum Biryani</button>
+          <button class="menu-filter-btn" data-filter="seafood">Seafood</button>
+          <button class="menu-filter-btn" data-filter="vegetarian">Vegetarian</button>
+          <button class="menu-filter-btn" data-filter="breads">Artisanal Breads</button>
+          <button class="menu-filter-btn" data-filter="desserts">Desserts</button>
+          <button class="menu-filter-btn" data-filter="beverages">Beverages</button>
+        </div>
+
+        <!-- Full Menu Grid -->
+        <div class="menu-items-grid">
+
+          <!-- 1. Starters -->
+          <div class="menu-item-row" data-category="starters">
+            <div class="menu-item-thumb">
+              <img src="assets/images/malabar-chicken.jpg" alt="Kozhi Porichathu">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Kozhi Porichathu</h4>
+                <span class="menu-item-price">₹480</span>
+              </div>
+              <div class="menu-item-native">Crisp Malabar Fried Chicken Morsels</div>
+              <p class="menu-item-desc">Marinated in crushed bird's eye chili, shallots, garlic, and fresh curry leaf crisps, shallow fried in pure coconut oil.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Signature</span>
+                <span class="tag-badge tag-spice">Spicy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="starters seafood">
+            <div class="menu-item-thumb">
+              <img src="assets/images/gallery-seafood.jpg" alt="Chemmeen Thenga Ularthu">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Chemmeen Thenga Ularthu</h4>
+                <span class="menu-item-price">₹560</span>
+              </div>
+              <div class="menu-item-native">Pan-Roasted Coconut Prawns</div>
+              <p class="menu-item-desc">Fresh Arabian Sea prawns tossed with crunchy toasted coconut chips, Tellicherry black pepper, and curry leaves.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-seafood">Seafood</span>
+                <span class="tag-badge tag-signature">Bestseller</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="starters vegetarian">
+            <div class="menu-item-thumb">
+              <img src="assets/images/story-heritage.jpg" alt="Vazhappoo Cutlet">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Vazhappoo Beetroot Cutlets</h4>
+                <span class="menu-item-price">₹360</span>
+              </div>
+              <div class="menu-item-native">Banana Blossom & Heritage Beet Croquettes</div>
+              <p class="menu-item-desc">Tender banana blossom, beetroot, and potatoes spiced with fennel and ginger, crumbed and crisp-fried with house raw mango chutney.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-veg">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="starters seafood">
+            <div class="menu-item-thumb">
+              <img src="assets/images/karimeen-pollichathu.jpg" alt="Koonthal Pepper Fry">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Koonthal Pepper Fry</h4>
+                <span class="menu-item-price">₹520</span>
+              </div>
+              <div class="menu-item-native">Calamari Rings in Caramelized Onion Pepper Masala</div>
+              <p class="menu-item-desc">Vizhinjam squid rings wok-tossed with dark roasted black peppercorns, slit green chilies, and tempered mustard seeds.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-seafood">Seafood</span>
+                <span class="tag-badge tag-spice">Spicy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Kerala Classics -->
+          <div class="menu-item-row" data-category="classics">
+            <div class="menu-item-thumb">
+              <img src="assets/images/malabar-chicken.jpg" alt="Malabar Pepper Chicken">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Nadan Kozhi Roast</h4>
+                <span class="menu-item-price">₹620</span>
+              </div>
+              <div class="menu-item-native">Country Chicken in Dark Onion Masala</div>
+              <p class="menu-item-desc">Slow-braised chicken morsels in a dense sauce of shallots, garlic, roasted coriander, and whole Tellicherry pepper.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Signature</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="classics">
+            <div class="menu-item-thumb">
+              <img src="assets/images/gallery-parotta.jpg" alt="Travancore Mutton Stew">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Travancore Mutton Stew</h4>
+                <span class="menu-item-price">₹650</span>
+              </div>
+              <div class="menu-item-native">Tender Goat in Mild Spiced Coconut Milk</div>
+              <p class="menu-item-desc">A gentle heirloom recipe featuring mutton cuts simmered in velvety coconut cream with baby potatoes, whole green cardamom, and ginger.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Royal Heritage</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="classics">
+            <div class="menu-item-thumb">
+              <img src="assets/images/malabar-chicken.jpg" alt="Kuttanad Duck Roast">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Kuttanadan Tharavu Roast</h4>
+                <span class="menu-item-price">₹680</span>
+              </div>
+              <div class="menu-item-native">Backwater Free-Range Duck Roast</div>
+              <p class="menu-item-desc">Tender Kuttanad duck cooked in a rich, deeply browned gravy with whole spices, vinegar, and fragrant fried shallots.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Kuttanad Classic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Dum Biryani -->
+          <div class="menu-item-row" data-category="biryani">
+            <div class="menu-item-thumb">
+              <img src="assets/images/malabar-biryani.jpg" alt="Thalassery Mutton Dum Biryani">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Thalassery Mutton Dum Biryani</h4>
+                <span class="menu-item-price">₹680</span>
+              </div>
+              <div class="menu-item-native">Heirloom Kaima Rice with Tender Goat</div>
+              <p class="menu-item-desc">Short-grain fragrant jeerakasala rice layered with slow-cooked spiced mutton, fried cashews, golden sultanas, and aged Thalassery garam masala.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Chef's Signature</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="biryani">
+            <div class="menu-item-thumb">
+              <img src="assets/images/malabar-biryani.jpg" alt="Malabar Chicken Dum Biryani">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Malabar Chicken Dum Biryani</h4>
+                <span class="menu-item-price">₹560</span>
+              </div>
+              <div class="menu-item-native">Calicut-Style Dum Biryani</div>
+              <p class="menu-item-desc">Succulent chicken pieces simmered in green chili-mint gravy, dum-cooked under dough seal with aged Kaima rice.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Popular</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="biryani seafood">
+            <div class="menu-item-thumb">
+              <img src="assets/images/coconut-prawns.jpg" alt="Kozhikode Chemmeen Biryani">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Kozhikode Chemmeen Biryani</h4>
+                <span class="menu-item-price">₹640</span>
+              </div>
+              <div class="menu-item-native">Arabian Sea Prawn Dum Biryani</div>
+              <p class="menu-item-desc">Juicy tiger prawns folded into spiced fragrant rice, perfumed with pure cow's ghee and roasted spices.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-seafood">Seafood</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="biryani vegetarian">
+            <div class="menu-item-thumb">
+              <img src="assets/images/story-heritage.jpg" alt="Jackfruit & Wild Mushroom Dum Biryani">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Chakka & Koon Dum Biryani</h4>
+                <span class="menu-item-price">₹490</span>
+              </div>
+              <div class="menu-item-native">Tender Raw Jackfruit & Forest Wild Mushrooms</div>
+              <p class="menu-item-desc">Heirloom tender jackfruit chunks and wild oyster mushrooms cooked dum style with saffron, caramelized onions, and Kaima rice.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-veg">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Seafood -->
+          <div class="menu-item-row" data-category="seafood">
+            <div class="menu-item-thumb">
+              <img src="assets/images/karimeen-pollichathu.jpg" alt="Karimeen Pollichathu">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Karimeen Pollichathu</h4>
+                <span class="menu-item-price">₹850</span>
+              </div>
+              <div class="menu-item-native">Banana Leaf Wrapped Pearl Spot</div>
+              <p class="menu-item-desc">Fresh pearl spot slathered in spicy shallot, ginger, and curry leaf paste, wrapped in smoked banana leaf and griddled.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-seafood">Seafood</span>
+                <span class="tag-badge tag-signature">Signature</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="seafood">
+            <div class="menu-item-thumb">
+              <img src="assets/images/kerala-fish-curry.jpg" alt="Alleppey Meen Curry">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Alleppey Meen Mulakittathu</h4>
+                <span class="menu-item-price">₹720</span>
+              </div>
+              <div class="menu-item-native">Claypot Fish in Spicy Tamarind Gravy</div>
+              <p class="menu-item-desc">Seer fish cooked in a seasoned clay manchatti with sun-dried Kudampuli, fiery red chilies, fenugreek, and cold-pressed coconut oil.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-seafood">Seafood</span>
+                <span class="tag-badge tag-spice">Spicy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="seafood">
+            <div class="menu-item-thumb">
+              <img src="assets/images/coconut-prawns.jpg" alt="Chemmeen Manga Curry">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Chemmeen Manga Thengapaal</h4>
+                <span class="menu-item-price">₹890</span>
+              </div>
+              <div class="menu-item-native">Tiger Prawns with Raw Mango & Coconut Milk</div>
+              <p class="menu-item-desc">Plump jumbo prawns simmered in velvety coconut milk, fresh raw mango slices, fresh turmeric root, and mustard seeds.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-seafood">Seafood</span>
+                <span class="tag-badge tag-signature">Signature</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="seafood">
+            <div class="menu-item-thumb">
+              <img src="assets/images/gallery-seafood.jpg" alt="Nadan Njandu Roast">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Kadal Njandu Roast</h4>
+                <span class="menu-item-price">₹780</span>
+              </div>
+              <div class="menu-item-native">Mud Crab Roast in Claypot</div>
+              <p class="menu-item-desc">Whole crab slow-roasted with cracked black pepper, toasted fennel, curry leaves, and grated fresh coconut.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-seafood">Seafood</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Vegetarian -->
+          <div class="menu-item-row" data-category="vegetarian">
+            <div class="menu-item-thumb">
+              <img src="assets/images/story-heritage.jpg" alt="Travancore Avial">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Royal Travancore Avial</h4>
+                <span class="menu-item-price">₹440</span>
+              </div>
+              <div class="menu-item-native">Organic Harvest Vegetables in Cumin Coconut Crushed Paste</div>
+              <p class="menu-item-desc">Tender plantain, yam, drumstick, and snake gourd simmered with coarse grated coconut, green chilies, yogurt, and virgin coconut oil.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-veg">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="vegetarian">
+            <div class="menu-item-thumb">
+              <img src="assets/images/story-heritage.jpg" alt="Mathanga Erissery">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Mathanga Vanpayar Erissery</h4>
+                <span class="menu-item-price">₹420</span>
+              </div>
+              <div class="menu-item-native">Pumpkin & Cowpeas with Toasted Coconut</div>
+              <p class="menu-item-desc">Sweet yellow pumpkin cooked with red cowpeas, infused with heavily browned grated coconut, mustard seeds, and dry red chilies.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-veg">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="vegetarian">
+            <div class="menu-item-thumb">
+              <img src="assets/images/story-heritage.jpg" alt="Vendakka Mappas">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Vendakka Mappas</h4>
+                <span class="menu-item-price">₹410</span>
+              </div>
+              <div class="menu-item-native">Crisp Okra in Mild Coriander Coconut Milk</div>
+              <p class="menu-item-desc">Fresh tender okra lightly crisped and simmered in a silky coconut milk reduction scented with coriander and green chilies.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-veg">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Artisanal Breads -->
+          <div class="menu-item-row" data-category="breads">
+            <div class="menu-item-thumb">
+              <img src="assets/images/gallery-parotta.jpg" alt="Malabar Parotta">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Flaky Malabar Parotta (2 pcs)</h4>
+                <span class="menu-item-price">₹120</span>
+              </div>
+              <div class="menu-item-native">Hand-Tossed Layered Flatbread</div>
+              <p class="menu-item-desc">Multi-layered spiral dough hand-beaten on polished granite and grilled on an iron skillet with ghee.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Essential</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="breads">
+            <div class="menu-item-thumb">
+              <img src="assets/images/gallery-parotta.jpg" alt="Appam">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Fermented Rice Appam (2 pcs)</h4>
+                <span class="menu-item-price">₹110</span>
+              </div>
+              <div class="menu-item-native">Soft-Centered Hoppers with Crispy Frills</div>
+              <p class="menu-item-desc">Slow-fermented rice and tender coconut batter cooked in a cast iron appachatti.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-veg">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="breads">
+            <div class="menu-item-thumb">
+              <img src="assets/images/gallery-parotta.jpg" alt="Idiyappam">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Lace Idiyappam (3 pcs)</h4>
+                <span class="menu-item-price">₹120</span>
+              </div>
+              <div class="menu-item-native">Steamed Rice String Hoppers</div>
+              <p class="menu-item-desc">Delicate pressed rice vermicelli nests dusted with freshly grated coconut.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-veg">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Desserts -->
+          <div class="menu-item-row" data-category="desserts">
+            <div class="menu-item-thumb">
+              <img src="assets/images/tender-coconut-pudding.jpg" alt="Tender Coconut Pudding">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Tender Coconut Elaneer Pudding</h4>
+                <span class="menu-item-price">₹420</span>
+              </div>
+              <div class="menu-item-native">Cardamom Scented Mousse & 24K Leaf</div>
+              <p class="menu-item-desc">Silky pudding made from freshly tapped coconut water and pulp, topped with pistachio slivers and edible gold leaf.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Signature</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="desserts">
+            <div class="menu-item-thumb">
+              <img src="assets/images/gallery-dessert.jpg" alt="Ada Pradhaman">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Ada Pradhaman Payasam</h4>
+                <span class="menu-item-price">₹380</span>
+              </div>
+              <div class="menu-item-native">Rice Ribbons in Palm Jaggery & Coconut Cream</div>
+              <p class="menu-item-desc">A reduction of dark Marayoor palm jaggery, thick coconut milk, dry ginger, and roasted coconut crisps.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Royal Classic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Beverages -->
+          <div class="menu-item-row" data-category="beverages">
+            <div class="menu-item-thumb">
+              <img src="assets/images/gallery-cocktail.jpg" alt="Malabar Spiced Sulaimani">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Malabar Spiced Sulaimani</h4>
+                <span class="menu-item-price">₹220</span>
+              </div>
+              <div class="menu-item-native">Digestive Spiced Black Tea</div>
+              <p class="menu-item-desc">Fragrant black tea brewed with crushed cardamom pods, cloves, mint leaves, and fresh yellow lemon.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Classic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item-row" data-category="beverages">
+            <div class="menu-item-thumb">
+              <img src="assets/images/gallery-cocktail.jpg" alt="Kokum Bird's Eye Sparkler">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h4 class="menu-item-title">Kokum & Bird's Eye Sparkler</h4>
+                <span class="menu-item-price">₹280</span>
+              </div>
+              <div class="menu-item-native">Artisanal Coastal Botanical Mocktail</div>
+              <p class="menu-item-desc">Red sun-ripened kokum syrup, roasted cumin, split bird's eye chili, sparkling soda, and black salt.</p>
+              <div class="menu-item-tags">
+                <span class="tag-badge tag-signature">Signature</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Reservation CTA Banner -->
+        <div style="background: var(--bg-card); border: 1px solid var(--gold-border); border-radius: var(--border-radius-md); padding: 3rem; text-align: center; margin-top: 3rem;">
+          <div class="section-eyebrow">Experience These Creations</div>
+          <h3 style="font-family: var(--font-serif-display); font-size: 2rem; color: var(--cream-pure); margin-bottom: 1rem;">
+            A Table Awaits You at MALABARÉ
+          </h3>
+          <p style="color: var(--cream-muted); max-width: 600px; margin: 0 auto 2rem; font-size: 0.95rem;">
+            Whether celebrating an anniversary or an unhurried family banquet, our culinary artisans look forward to welcoming you.
+          </p>
+          <a href="reservation.html" class="btn btn-primary">Reserve Your Table Now</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo">MALABAR<span>É</span></a>
+          <p class="footer-tagline-text">&ldquo;The Soul of Malabar, Served Beautifully.&rdquo;</p>
+          <p class="footer-desc">
+            An ode to coastal Kerala culinary heritage, where ancient claypot alchemy and heirloom spice recipes converge with contemporary fine dining excellence.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="index.html#story" class="footer-link">Our Heritage</a></li>
+            <li><a href="index.html#signatures" class="footer-link">Signatures</a></li>
+            <li><a href="menu.html" class="footer-link">Full Menu</a></li>
+            <li><a href="reservation.html" class="footer-link">Reservations</a></li>
+            <li><a href="index.html#contact" class="footer-link">Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Service Hours</h4>
+          <div class="footer-hours-list">
+            <div class="hours-entry">
+              <span class="hours-day">Lunch (Tue – Sun)</span>
+              <span>12:00 PM – 03:30 PM</span>
+            </div>
+            <div class="hours-entry">
+              <span class="hours-day">Dinner (Tue – Sun)</span>
+              <span>07:00 PM – 11:30 PM</span>
+            </div>
+            <div class="hours-entry">
+              <span class="hours-day">Mondays</span>
+              <span>Closed for Private Events</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Inquiries</h4>
+          <p style="font-size:0.875rem; color:var(--cream-muted); line-height:1.7;">
+            Palace Avenue, Kowdiar, Thiruvananthapuram<br>
+            Phone: <a href="tel:+914712728899" style="color:var(--gold-light);">+91 471 272 8899</a><br>
+            Email: <a href="mailto:concierge@malabare.in" style="color:var(--gold-light);">concierge@malabare.in</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 MALABARÉ Fine Dining. Kowdiar, Thiruvananthapuram, Kerala.</div>
+        <div>Crafted with prestige for the <span class="agency-credit">BRUK Digital Studio Portfolio</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
